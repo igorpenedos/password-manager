@@ -1,4 +1,4 @@
-from db import store, searchEmail as searchEmailDB, searchService as searchServiceDB, getService as getServicePasswordDB, getAll as getAllDB
+from db import store, getAll as getAllDB
 from encryption import encrypt, decrypt
 import pyperclip
 
@@ -57,6 +57,4 @@ def printResult(result):
     print("-"*20)
     print("Service: " + decrypt(result[1]))
     print("Email: " + decrypt(result[2]))
-    # print("Password: " + decrypt(result[0]))
-    # print("-"*20)
     
